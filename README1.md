@@ -89,6 +89,31 @@
 - node_modules
 - .gitignore
 - .parcel-cache
+
+        <!-- Bundlers: vite, webpack, parcel -->
+
+    <!--  Create-React-App uses webpack, babel-->
+    <!--
+      ==> parcel is orchestrating the following functionalities
+      1) HMR
+        2) File watcher Algorithm => C++ 
+        3) bundling
+        4) minifying
+        5) cleaning our code  () 
+        6) dev and production build
+        7) Super fast build algorithm
+        8) image optimization    
+        9) parcel-cache while development => 
+        10) Compression
+        11) Compatible with older version of browser
+        12) HTTPS on dev
+        13) parcel manages the port number also
+        14) Consisten Hashing Algorithm
+        15) Zero configure
+        16) transitive dependency
+        17) tree Shaking
+    -->
+
 - dist
 - what is HMR that reflects on server.. the changes on saving the project in local
 - where does the files get saved on building production? => dist folder => can be deleted and again created while 'build'
@@ -96,14 +121,22 @@
 * most heaviest folder=> images, media
 * .parcel-cache => can be deleted and 'build' again
 * browserLists
+
 ---
-  ### Chapter 03
 
-* polyfill=> replacement code for older browsers => Babel
-* Diffing algo (importance of Keys having multiple children, w/o keys react don't have to search for each children in-order one-by-one) => like sector/segment search in disks(something like this.. in disk scheduling )
+### Chapter 03
 
-* where is the 'React' coming from? => node-modules
+- polyfill=> replacement code for older browsers => Babel
+- Diffing algo (importance of Keys having multiple children, w/o keys react don't have to search for each children in-order one-by-one) => like sector/segment search in disks(something like this.. in disk scheduling )
 
-* R**eact.createElement** => object => HTML(DOM)
-* Creating react-elements will be a **huge task** for even a small page
-        =. therefore, JSX is used
+- where is the 'React' coming from? => node-modules
+
+- **React.createElement** => object => HTML(DOM)
+- Creating react-elements will be a **huge task** for even a small page
+  =. therefore, JSX is used
+- react keeps track of "Keys"
+- difference between HTML and JSX
+- tab-index => in html \* tabIndex=> in jsx
+- How does JSX executes? => **Babel** recognises the React code
+- // JSX => React.createElement => Object => HTML(DOM)
+- advantages of JSX

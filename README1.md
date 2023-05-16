@@ -140,3 +140,8 @@
 - How does JSX executes? => **Babel** recognises the React code
 - // JSX => React.createElement => Object => HTML(DOM)
 - advantages of JSX
+
+* components in React =>
+  _ 1) Functional Component (new)
+  _ 2) Class based components (old) => for interviews/ older projects 
+

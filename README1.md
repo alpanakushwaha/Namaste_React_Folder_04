@@ -1,0 +1,49 @@
+#### Namaste React
+
+---
+
+- ## only commands and Questions
+---
+
+### Chapter 01: Inception
+
+- React is a library or a framework?
+- difference b/w library and framework?
+- carousel is lib or framework?
+- emmet?
+- writing "Hello world" in html
+- writing "Hello world" in javascript (manipulating the DOM), creating an h1 tag in js, how to put h1 inside root?
+- how does browser get to know about document, createElement(is an API).. etc?
+- what are CDN?
+- crossOrigin?
+- Shortest program of React?
+- React is global-object? => kind of
+- why there are 2 files for CDN links(script files, React lib and ReactDOM lib)?
+- react vs reactDOM?
+
+- writing "Hello world" in react. what are the 3 arguments in this process.
+
+* console.log(Heading); ? => now it is a react Element
+* can we use innerHTML for react-Element h1 and change the content? how?
+* can we have multiple 'root'?
+* heving Header and footer, even then just modify root( as the developer wants)
+* can also manipulate 'searchBar', 'header', 'footer', by making it 'root' (but not recommended)
+* {} => ? in React.createElement
+
+#### React Docs
+
+- if there is content present in root div in HTML, then what will happen when the root is being manipulated using React? => below the HTML content or it wil be overRidden?
+- what if the CDN links are above the script.js file in HTML page? order..... of scripts
+- Diff between Async and Defer?
+- what happens if {} object has null in its place? => different things inside {}
+- creating a div, and inside that 2 children, ==> gives error, why?
+
+* to avoid going to HTML file and CSS file, write JS code in React, that has HTML and CSS code inside it,
+* html inside js, css in js
+* JSX?
+* react.development.js => local
+* react.production.js => minified
+
+---
+
+### Chapter 02: Igniting our App

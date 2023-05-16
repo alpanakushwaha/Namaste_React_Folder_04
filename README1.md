@@ -2,8 +2,28 @@
 
 ---
 
-- ## only commands and Questions
+- ## only commands
+- npm init (or) npm init -y
+- npm i -D parcel
+- npm i react
+- npm i react-dom
+- npx parcel index.html => for development build, host on local server, started a server
+
+  - (in script.js file)
+  - import React from "react"
+  - import ReactDOM from "react-dom/client"
+  - (in index.html file)=> type="module"
+
+- npx parcel build index.html => error
+- > entry-piont in package.json => "main":"script.js" (NOT NEEDED NOW,when USING PARCEL)
+- can also do https... for local-server by: npx parcel index.html --https
+
+- browserlist in package.json
+
+
 ---
+
+## Questions
 
 ### Chapter 01: Inception
 
@@ -47,3 +67,16 @@
 ---
 
 ### Chapter 02: Igniting our App
+
+- package.json
+- package-lock.json
+- node_modules
+- .gitignore
+- .parcel-cache
+- dist
+- what is HMR that reflects on server.. the changes on saving the project in local
+- where does the files get saved on building production? => dist folder => can be deleted and again created while 'build'
+
+* most heaviest folder=> images, media
+* .parcel-cache => can be deleted and 'build' again
+* browserLists 

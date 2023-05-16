@@ -1,0 +1,30 @@
+{
+  "name": "04_react_latest_file",
+  "version": "1.0.0",
+  "description": "this is Namaste_React_04",
+ 
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpanakushwaha/Namaste_React_Folder_04.git"
+  },
+  "author": "Alpana Kushwaha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alpanakushwaha/Namaste_React_Folder_04/issues"
+  },
+  "homepage": "https://github.com/alpanakushwaha/Namaste_React_Folder_04#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 2 chrome versions"
+  ]
+}

@@ -17,9 +17,25 @@
 - npx parcel build index.html => error
 - > entry-piont in package.json => "main":"script.js" (NOT NEEDED NOW,when USING PARCEL)
 - can also do https... for local-server by: npx parcel index.html --https
-
 - browserlist in package.json
 
+---
+
+- within package.json write script for short execution command as follows:
+
+  - "script":{
+    _ "start":"parcel index.html",
+    _ "build":"parcel build index.html",
+    }
+
+    \*\* npx == npm run
+
+* need to configure to remove console.logs (parcel and babel doesn't do it)
+* => babel-plugin-transform-remove-console (google this plugin), copy the command for it's installation
+* .babelrc (create this file) \* // with options
+  {
+  "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]] // removes error scripts shown on production build( used by customers)
+  }
 
 ---
 
@@ -79,4 +95,12 @@
 
 * most heaviest folder=> images, media
 * .parcel-cache => can be deleted and 'build' again
-* browserLists 
+* ## browserLists
+
+  ### Chapter 03
+
+* polyfill=> replacement code for older browsers => Babel
+* Diffing algo (importance of Keys having multiple children, w/o keys react don't have to search for each children in-order one-by-one) => like sector/segment search in disks(something like this.. in disk scheduling )
+
+
+* where is the 'React' coming from? => node-modules

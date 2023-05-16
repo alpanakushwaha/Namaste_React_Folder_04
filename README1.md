@@ -143,5 +143,18 @@
 
 * components in React =>
   _ 1) Functional Component (new)
-  _ 2) Class based components (old) => for interviews/ older projects 
+  _ 2) Class based components (old) => for interviews/ older projects
 
+* JSX sanitises the code
+* component composition?
+
+- react Reconciliation
+
+* jsx definitely needs **babel**(mandatory), if not parcel (not mandatory)
+* will jsx work if parcel is not installed?
+* react element v/s class-based components?
+* when we have a reactElement, it can be rendered, why do we need Functional Components
+* other transpilers like babel
+* createRoot =>API=> function
+* why does 302 re-direct happens when we import react from CDN?
+* is a component hoisted?

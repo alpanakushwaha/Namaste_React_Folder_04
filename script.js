@@ -11,10 +11,10 @@ const heading2 = React.createElement(
   { title: "titleOne", key: "key1" },
   " Namaste EVERYONE!!! 🚀✨ "
 );
-const heading3 = React.createElement(
-  "h3",
-  { title: "titleTwo", key: "key2" },
-  "Namaste React, hello there!!! 🚀✨ "
+const heading3 = (
+  <h3 className="header3" key="keyOne">
+    React header using JSX
+  </h3>
 );
 const container = React.createElement(
   "div",

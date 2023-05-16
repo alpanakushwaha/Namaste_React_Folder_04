@@ -95,12 +95,15 @@
 
 * most heaviest folder=> images, media
 * .parcel-cache => can be deleted and 'build' again
-* ## browserLists
-
+* browserLists
+---
   ### Chapter 03
 
 * polyfill=> replacement code for older browsers => Babel
 * Diffing algo (importance of Keys having multiple children, w/o keys react don't have to search for each children in-order one-by-one) => like sector/segment search in disks(something like this.. in disk scheduling )
 
-
 * where is the 'React' coming from? => node-modules
+
+* R**eact.createElement** => object => HTML(DOM)
+* Creating react-elements will be a **huge task** for even a small page
+        =. therefore, JSX is used

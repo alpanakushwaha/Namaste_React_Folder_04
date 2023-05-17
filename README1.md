@@ -124,7 +124,7 @@
 
 ---
 
-### Chapter 03
+### Chapter 03- laying the foundation
 
 - polyfill=> replacement code for older browsers => Babel
 - Diffing algo (importance of Keys having multiple children, w/o keys react don't have to search for each children in-order one-by-one) => like sector/segment search in disks(something like this.. in disk scheduling )
@@ -158,3 +158,9 @@
 * createRoot =>API=> function
 * why does 302 re-direct happens when we import react from CDN?
 * is a component hoisted?
+
+ ---
+ ### chap_04 - let's get hooked
+
+ 
+

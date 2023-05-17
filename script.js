@@ -28,7 +28,7 @@ const NavigationBar = () => {
   );
 };
 
-const HeaderComponent = () => {
+const Header = () => {
   return (
     <>
       <div className="header">
@@ -39,22 +39,41 @@ const HeaderComponent = () => {
   );
 };
 
-const styleObj = {
-  backgroundColor: "blue",
+const restaurantObject = {
+  // making restaurant-Onject
+  image:
+    "https://b.zmtcdn.com/data/pictures/3/18431383/741771d5ea7c29186a908227bd846db7.jpeg",
+  restaurant_name: "NH7 Refuel",
+  cuisine: ["North Indian", "Chinese"],
+  avgRatings: "3.8 *",
 };
 
-const jsxCode = (
-  <div style={styleObj}>
-    <h3 style={{ color: "red", fontSize: "30px" }}>header three</h3>
-    <h3>second header three</h3>
-  </div>
-);
+const RestaurantCard = () => {
+  // component using restaurantObject data
+  return (
+    <div className="card">
+      <img src={restaurantObject.image}></img>
+      <h2>{restaurantObject.restaurant_name}</h2>
+      <h3>{restaurantObject.cuisine.join(", ")}</h3>
+      <h2>{restaurantObject.avgRatings}</h2>
+    </div>
+  );
+};
 
 const Body = () => {
   return (
     <>
-      {jsxCode}
-      <h3 className="body_container">Body</h3>
+      <div className="body_container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
     </>
   );
 };
@@ -69,7 +88,10 @@ const Footer = () => {
 const AppLayout = () => {
   return (
     <>
-      <HeaderComponent />
+      <>
+        <Footer />
+      </>
+      <Header />
       <Body />
       <Footer />
     </>

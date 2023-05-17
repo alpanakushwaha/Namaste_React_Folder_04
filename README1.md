@@ -157,10 +157,30 @@
 * other transpilers like babel
 * createRoot =>API=> function
 * why does 302 re-direct happens when we import react from CDN?
-* is a component hoisted?
+* is a **component hoisted**?
 
  ---
  ### chap_04 - let's get hooked
+* is JSX mandatory?, 
+* is typescript mandatory?
+* is ES6 mandatory?
+* 
+##### planning of **Food delivery App**
+  * Header
+      * logo
+      * list items(Right side)
+      * Cart
+  * Body
+      * Search bar
+      * RestaurantList
+        * Restaurantcard
+          * Image
+          * Name  
+          * Rating
+          * cuisines
+  * Footer
+      * links (social media)
+      * copyrights
+      
 
- 
-
+* React.Fragments

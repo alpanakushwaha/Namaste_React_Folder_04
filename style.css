@@ -2,6 +2,34 @@
   margin: 10px;
 }
 
+.image_fooVilla {
+  width: 200px;
+}
+
 .header3 {
   background-color: greenyellow;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border: 2px #fa7f7f solid;
+}
+
+.nav-itms {
+  display: flex;
+  margin: 10px;
+}
+
+.nav-itms > ul {
+  display: flex;
+  flex-direction: row;
+  border: 2px #7ecaf9 solid;
+
+}
+.nav-itms > ul > li {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
 }

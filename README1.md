@@ -189,3 +189,5 @@
 * swiggy API
 * **config-driven UI**
 * optional-chaining
+* destructuring
+* spread-operator

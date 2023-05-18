@@ -458,21 +458,14 @@ const restaurantObject = [
   },
 ];
 
-const RestaurantCard = (properties) => {
-  console.log(properties);
-
+const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating }) => {
   return (
     <>
       <div className="card">
-        <img
-          src={
-            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-            properties?.restaurent?.data?.cloudinaryImageId
-          }
-        ></img>
-        <h2>{properties?.restaurent?.data?.name}</h2>
-        <h3>{properties?.restaurent?.data?.cuisines.join(", ")}</h3>
-        <h2>{properties?.restaurent?.data?.avgRating}</h2>
+        <img src={cloudinaryImageId}></img>
+        <h2>{name}</h2>
+        <h3>{cuisines}</h3>
+        <h2>{avgRating}</h2>
       </div>
     </>
   );
@@ -482,10 +475,33 @@ const Body = () => {
   return (
     <>
       <div className="body_container">
-        <RestaurantCard restaurent={restaurantObject[0]} />
-        <RestaurantCard restaurent={restaurantObject[1]} />
-        <RestaurantCard restaurent={restaurantObject[2]} />
-        <RestaurantCard restaurent={restaurantObject[3]} />
+        <RestaurantCard
+          name={restaurantObject[0].data.name}
+          cuisines={restaurantObject[0].data.cuisines}
+          avgRating={restaurantObject[0].data.avgRating}
+          cloudinaryImageId={
+            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+            restaurantObject[0].data.cloudinaryImageId
+          }
+        />
+        <RestaurantCard
+          name={restaurantObject[1].data.name}
+          cuisines={restaurantObject[1].data.cuisines.join(", ")}
+          avgRating={restaurantObject[1].data.avgRating}
+          cloudinaryImageId={
+            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+            restaurantObject[1].data.cloudinaryImageId
+          }
+        />
+        <RestaurantCard
+          name={restaurantObject[2].data.name}
+          cuisines={restaurantObject[2].data.cuisines.join(", ")}
+          avgRating={restaurantObject[2].data.avgRating}
+          cloudinaryImageId={
+            "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+            restaurantObject[2].data.cloudinaryImageId
+          }
+        />
       </div>
     </>
   );

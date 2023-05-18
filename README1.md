@@ -148,7 +148,7 @@
 * JSX sanitises the code
 * component composition?
 
-- react Reconciliation
+- **react Reconciliation**
 
 * jsx definitely needs **babel**(mandatory), if not parcel (not mandatory)
 * will jsx work if parcel is not installed?
@@ -158,36 +158,49 @@
 * createRoot =>API=> function
 * why does 302 re-direct happens when we import react from CDN?
 * is a **component hoisted**?
+  8 XSL attack
+  ---
 
- ---
- ### chap_04 - let's get hooked
-* is JSX mandatory?, 
-* is typescript mandatory?
-* is ES6 mandatory?
-* 
+### chap_04 - talk is cheap, show me the code
+
+- is JSX mandatory?,
+- is typescript mandatory?
+- is ES6 mandatory?
+-
+
 ##### planning of **Food delivery App**
-  * Header
-      * logo
-      * list items(Right side)
-      * Cart
-  * Body
-      * Search bar
-      * RestaurantList
-        * Restaurantcard
-          * Image
-          * Name  
-          * Rating
-          * cuisines
-  * Footer
-      * links (social media)
-      * copyrights
-      
 
-* React.Fragments?
-* Recat.Fragments inside Recat.Fragments? => yes
-  
-* swiggy API
-* **config-driven UI**
-* optional-chaining
-* destructuring
-* spread-operator
+- Header
+  - logo
+  - list items(Right side)
+  - Cart
+- Body
+  - Search bar
+  - RestaurantList
+    - Restaurantcard
+      - Image
+      - Name
+      - Rating
+      - cuisines
+- Footer
+
+  - links (social media)
+  - copyrights
+
+- React.Fragments?
+- Recat.Fragments inside Recat.Fragments? => yes
+- swiggy API
+- **config-driven UI**
+- optional-chaining
+- destructuring
+- spread-operator
+- map-reduce-filter
+- _virtual-DOM_ (**reconcilliation**)
+  - renders only a specific part, that is found to be changed using Diff-
+
+* **React-Fibre**
+* **React-Fibre Architecture**
+* reconciliation Engine
+* index (_not recommended_ to use as key)
+---
+

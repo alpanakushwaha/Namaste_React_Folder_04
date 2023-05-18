@@ -209,3 +209,5 @@
 
 - exporting default, named components
 - importing default, named components
+
+* 1-way data-binding happens in React

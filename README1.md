@@ -202,5 +202,10 @@
 * **React-Fibre Architecture**
 * reconciliation Engine
 * index (_not recommended_ to use as key)
+
 ---
 
+### chap_05 - let's get hooked
+
+- exporting default, named components
+- importing default, named components

@@ -211,3 +211,5 @@
 - importing default, named components
 
 * 1-way data-binding happens in React
+* **useState**
+* onClick(()=>{...})

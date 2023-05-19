@@ -2,13 +2,25 @@ import { restaurantObject } from "../utils/restaurantObject";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 
+// what is state?
+// what is react hooks?
+// what is useState?
+
+function filterData(searchText, restaurant1) {
+  const filterData = restaurant1.filter((restaurant2) =>
+    restaurant2.data.name.includes(searchText)
+  );
+  return filterData;
+}
+
 const Body = () => {
-  const searchText1 = "asdf";
-  const [searchText, setSearchText] = useState(searchText1);
-  const [searchClicked, setSearchClicked] = useState("false");
+  const [searchText, setSearchText] = useState("");
+  const [restaurant1, setRestaurant1] = useState(restaurantObject);
+
+  
   return (
     <>
-      <div className="search-container">
+      <div className="search-container">   // 1st rendering
         <input
           type="text"
           className="search-input"
@@ -18,21 +30,21 @@ const Body = () => {
             setSearchText(e.target.value);
           }}
         ></input>
-        <h1>{searchText}</h1>
-        <h1>{searchClicked}</h1>
         <button
           className="serach-btn"
           onClick={() => {
-            if (searchClicked == "false") setSearchClicked("true");
-            else setSearchClicked("false");
+            // need to filter the data
+            const data = filterData(searchText, restaurant1);
+            // update the state- restaurant1
+            setRestaurant1(data);
           }}
         >
           Search
         </button>
       </div>
 
-      <div className="body_container">
-        {restaurantObject.map((reabcdstau) => {
+      <div className="body_container">  // 2nd rendering
+        {restaurant1.map((reabcdstau) => {
           return (
             <RestaurantCard {...reabcdstau.data} key={reabcdstau.data.id} />
           );
